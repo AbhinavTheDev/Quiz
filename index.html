@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen active">
+            <h1>Quiz Master</h1>
+            <div class="category-selection">
+                <h2>Select Category:</h2>
+                <select id="category-select">
+                    <option value="9">General Knowledge</option>
+                    <option value="18">Computer Science</option>
+                    <option value="11">Movies</option>
+                    <option value="23">History</option>
+                    <option value="22">Geography</option>
+                </select>
+            </div>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <h2 id="question">Question Text</h2>
+                <div id="progress">Question 1/10</div>
+            </div>
+            <div id="answers" class="answer-container">
+                <!-- Answer buttons will be inserted here -->
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="screen">
+            <div class="results-content">
+                <h2>Quiz Complete!</h2>
+                <div class="score-container">
+                    <div class="score-circle">
+                        <span id="score">0</span>/10
+                    </div>
+                </div>
+                <p id="result-message">Great job!</p>
+                <button id="play-again" class="btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
